@@ -6,7 +6,6 @@
     <artifactId>jetty-toolchain</artifactId>
     <groupId>org.eclipse.jetty.toolchain</groupId>
     <version>1.7</version>
-    <relativePath>../jetty-toolchain</relativePath>
   </parent>
 
   <modelVersion>4.0.0</modelVersion>
@@ -17,9 +16,9 @@
   <description>Performance/Benchmark Support for Jetty</description>
 
   <scm>
-    <connection>scm:git:git://github.com/eclipse/jetty.toolchain.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/eclipse/jetty.toolchain.git</developerConnection>
-    <url>https://github.com/eclipse/jetty.toolchain/tree/master/jetty-perf-helper</url>
+    <connection>scm:git:git://github.com/jetty/jetty.perf.helper.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/jetty/jetty.perf.helper.git</developerConnection>
+    <url>https://github.com/eclipse/jetty.perf.helper</url>
   </scm>
 
   <dependencies>
