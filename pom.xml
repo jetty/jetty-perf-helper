@@ -1,26 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" 
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <parent>
-    <artifactId>jetty-toolchain</artifactId>
-    <groupId>org.eclipse.jetty.toolchain</groupId>
-    <version>1.7</version>
-    <relativePath>../jetty-toolchain</relativePath>
-  </parent>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.eclipse.jetty</groupId>
+    <artifactId>jetty-parent</artifactId>
+    <version>26</version>
+  </parent>
   <artifactId>jetty-perf-helper</artifactId>
-  <packaging>jar</packaging>
   <version>1.0.8-SNAPSHOT</version>
+  <packaging>jar</packaging>
   <name>Jetty Toolchain :: Performance Helper</name>
   <description>Performance/Benchmark Support for Jetty</description>
 
   <scm>
-    <connection>scm:git:git://github.com/eclipse/jetty.toolchain.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/eclipse/jetty.toolchain.git</developerConnection>
-    <url>https://github.com/eclipse/jetty.toolchain/tree/master/jetty-perf-helper</url>
+    <connection>scm:git:https://github.com/jetty/${jetty.git.repo}.git</connection>
+    <developerConnection>scm:git:git@github.com:jetty/${jetty.git.repo}.git</developerConnection>
+    <tag>HEAD</tag>
+    <url>https://github.com/jetty/${jetty.git.repo}</url>
   </scm>
+  <properties>
+    <jdk.version.minimum>11</jdk.version.minimum>
+    <jetty.git.repo>jetty-perf-helper</jetty.git.repo>
+    <license.header.resource>license-header.txt</license.header.resource>
+  </properties>
 
   <dependencies>
     <dependency>
@@ -31,4 +34,3 @@
   </dependencies>
 
 </project>
-
